@@ -56,15 +56,7 @@ int main()
 
     std::cout << std::endl << "Положительные числа по убыванию: " << std::endl;
 
-    for (int i = 0; i < pol; i++) {
-        for (int j = 0; j < pol - 1; j++) {
-            if (array_pol[j] < array_pol[j + 1]) {
-                float temp = array_pol[j + 1];
-                array_pol[j + 1] = array_pol[j];
-                array_pol[j] = temp;
-            }
-        }
-    }
+    BubleSortFloat(array_pol, pol, 0);
 
     for (int i = 0; i < pol; i++) {
         std::cout << "[" << i << "]: " << array_pol[i] << std::endl;
@@ -72,15 +64,7 @@ int main()
 
     std::cout << std::endl << "Отрицательные числа по возрастанию: " << std::endl;
 
-    for (int i = 0; i < otr; i++) {
-        for (int j = 0; j < otr - 1; j++) {
-            if (array_otr[j] > array_otr[j + 1]) {
-                float temp = array_otr[j + 1];
-                array_otr[j + 1] = array_otr[j];
-                array_otr[j] = temp;
-            }
-        }
-    }
+    BubleSortFloat(array_otr, otr, 1);
 
     for (int i = 0; i < otr; i++) {
         std::cout << "[" << i << "]: " << array_otr[i] << std::endl;
