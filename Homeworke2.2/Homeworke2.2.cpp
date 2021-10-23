@@ -1,8 +1,5 @@
 ﻿#include <iostream>
-int random(int min, int max) {
-    int value = rand() % max + min;
-    return value;
-}
+#include "../Core/core.h"
 
 int main() {
     setlocale(LC_ALL, "Russian");
@@ -29,13 +26,13 @@ int main() {
     
     std::cout << "1 массив:" << std::endl;
     for (int i = 0; i < array_size1; i++) {
-        array1[i] = random(min, max);
+        array1[i] = random_int(min, max);
         std::cout << "[" << i << "]: " << array1[i] << std::endl;
     }
 
     std::cout << "2 массив:" << std::endl;
     for (int i = 0; i < array_size2; i++) {
-        array2[i] = random(min, max);
+        array2[i] = random_int(min, max);
         std::cout << "[" << i << "]: " << array2[i] << std::endl;
     }
 
