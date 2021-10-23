@@ -1,10 +1,6 @@
 ﻿#include <iostream>
 #include <cstdlib>
-
-float random(float min, float max) {
-    float value = (float)(rand()) / RAND_MAX * (max - min) + min;
-    return value;
-}
+#include "../Core/core.h"
 
 int main()
 {
@@ -30,7 +26,7 @@ int main()
     std::cout << std::endl << "Сгенерированный массив:" << std::endl;
 
     for (int i = 0; i < array_size; i++) {
-        array[i] = random(min,max);
+        array[i] = random_float(min,max);
         std::cout <<"[" << i << "]: " << array[i] << std::endl;
     }
 
