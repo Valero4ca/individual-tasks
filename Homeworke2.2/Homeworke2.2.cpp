@@ -37,16 +37,7 @@ int main() {
     }
 
     //Сортируем первый массив от большего к меньшему пузырьком
-
-    for (int i = 0; i < array_size1; i++) {
-        for (int j = 0; j < array_size1 - 1; j++) {
-            if (array1[j] > array1[j + 1]) {
-                int temp = array1[j + 1];
-                array1[j + 1] = array1[j];
-                array1[j] = temp;
-            }
-        }
-    }
+    BubleSortInt(array1, array_size1, 0);
     
     for (int i = 0; i < array_size1; i++) {
         min_val = array1[i];
