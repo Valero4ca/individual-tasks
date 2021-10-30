@@ -43,7 +43,7 @@ int* BubleSortInt(int* array, int array_size, bool direction) {
     return array;
 }
 
-float* BubleSortFloat(float* array, float array_size, bool direction) {
+float* BubleSortFloat(float* array, int array_size, bool direction) {
     switch (direction) {
 
     case 0: {

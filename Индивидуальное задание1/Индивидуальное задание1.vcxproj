@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e6153a1a-ece2-4e1c-bba9-efb0402d5ced}</ProjectGuid>
-    <RootNamespace>Homeworke22</RootNamespace>
+    <ProjectGuid>{221e407c-a91c-4b3e-baba-a855486805b6}</ProjectGuid>
+    <RootNamespace>Индивидуальноезадание1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Homework2.2</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,14 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Core\core.cpp" />
-    <ClCompile Include="Homeworke2.2.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\Core\core.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include=".editorconfig" />
+    <ClCompile Include="Индивидуальное задание1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

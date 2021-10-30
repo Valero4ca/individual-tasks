@@ -4,7 +4,7 @@
 
 int main()
 {
-    setlocale(LC_ALL, "Russian");
+    setlocale(LC_ALL, (const char*)"Russian");
     std::cout << "Введите размер массива: ";
     int array_size;
     //Создаём переменную для хранения размера массива
@@ -70,7 +70,7 @@ int main()
         std::cout << "[" << i << "]: " << array_otr[i] << std::endl;
     }
     
+    delete[] array;
 
     return 0;
 }
-
