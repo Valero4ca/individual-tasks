@@ -5,16 +5,25 @@ using namespace std;
 
 int main()
 {
+ 
 
-    setlocale(LC_ALL, "Russian");
-    float a, y, x, h, b;
-    std::cout << "Введите значение h\n";
+    setlocale( LC_ALL, "Russian");
+    float a, b, h, y;
+
+    std::cout << "Введите значение a\n";
+    std::cin >> a;
+    std::cout << "Введенное значение: " << a << std::endl;
+
+    std::cout << "Введите значение b\n";
+    std::cin >> b;
+    std::cout << "Введенное значение: " << b << std::endl;
+
+    std::cout <<( "Введите значение h\n");
     std::cin >> h;
     std::cout << "Введенное значение: " << h << std::endl;
 
-    while (a<=b) {
-
-        y = pow((3), x);
+    while (a <= b) {
+        y = pow((3), a);
         std::cout << "y(" << a << ")" << " = " << y << std::endl;
 
         a = a + h;
@@ -23,7 +32,7 @@ int main()
     int A[5];
     max_index = 0;
 
-    for (int b = 1; b < 5, b++) {
+    for (int b = 1; b < 5; b++) {
         if (A[max_index] < A[b]) {
             max_index = b;
         }
