@@ -55,4 +55,6 @@ int main()
 
 	std::cout << std::endl<< "Среднее арифметическое: "<<sr;
 
+	delete[] A;
+	system("pause");
 }
