@@ -13,17 +13,12 @@ double sumer(double x, double eps)
     return 2 * sum;
 }
 
-double uravn(double g, int n)   // Основное уравнение 1
+double uravn(double x, int n)   // Основное уравнение 1
 {
     double y;
-    y = 1 + (x * x) / 2 * atan(x) * atan(x) - x / 2;
+    y = 1 + x*x/2 * atan(x) * atan(x) - x / 2;
     return x;                         // значение функции
 }
-
-
-
-
-
 
 void rez(double a, double b, double h, int n) // a - откуда b - до , h - шаг, 
 {
@@ -41,7 +36,7 @@ void rez(double a, double b, double h, int n) // a - откуда b - до , h -
 
     for (x = a; x <= b; x += h)
     {
-        std::cout << "Результаты вычислений:\n" << "\tx=" << x << "\ty=" << rez(x) << "\ts=" << s << std::endl;
+        std::cout << "Результаты вычислений:\n" << "\tx=" << x << "\ty=" << rez << "\ts=" << s << std::endl;
     }
 }
 
@@ -74,15 +69,15 @@ int main()
 
     }
 
-    for () // бесконечный цикл
+    for (;;) // бесконечный цикл
     {
-        cout << "Задайте переменную n\n";
-        cin >> n;
+        std::cout << "Задайте переменную n\n";
+        std::cin >> n;
         if (n <= 0)
         {
-            cout << "Неверное значение количества выполнение операций\n";
-            cin.clear();
-            cin.ignore(32767, '\n');
+            std::cout << "Неверное значение количества выполнение операций\n";
+            std::cin.clear();
+            std::cin.ignore(32767, '\n');
             continue;
         }
         else
