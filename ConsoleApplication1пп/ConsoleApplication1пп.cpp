@@ -16,14 +16,14 @@ double uravn(double x)   // Основное уравнение 1
 void rez(double a, double b, double h, int n) // a - откуда b - до , h - шаг, 
 {
     double r, k, s, x;
-    
+
     std::cout << "Результаты вычислений:" << std::endl;
-    
+
     for (x = a; x <= b; x += h)
     {
-        
+
         s = r = 1;
-        
+
         std::cout << "Y(" << x << "): " << uravn(x) << std::endl;
 
         for (k = 0; k <= n; ++k)
@@ -36,16 +36,16 @@ void rez(double a, double b, double h, int n) // a - откуда b - до , h -
 int main()
 {
     setlocale(LC_ALL, "rus");
-    
+
     double a, b, r, k, h, s, x, y;
     int n;
     // Произвольные значения
-    
+
     std::cout << "Задайте переменную a\n";
     std::cin >> a;
     std::cout << "Задайте переменную b\n";
     std::cin >> b;
-    
+
     for (;;) // бесконечный цикл
     {
         std::cout << "Задайте переменную h\n";
